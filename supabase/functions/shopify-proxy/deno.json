@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "@shopify/shopify-api": "npm:@shopify/shopify-api@^11",
+    "@shopify/shopify-api/adapters/web": "npm:@shopify/shopify-api@^11/adapters/web"
+  }
+}

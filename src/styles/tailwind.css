@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --color-primary: #D4B5A0; /* Warm nude - approachability with professional authority */
+    --color-primary-foreground: #2C2420; /* Rich dark brown - excellent contrast */
+    
+    /* Secondary Colors */
+    --color-secondary: #F5E6D3; /* Light nude - breathing room and subtle contrast */
+    --color-secondary-foreground: #2C2420; /* Rich dark brown */
+    
+    /* Accent Colors */
+    --color-accent: #C9A876; /* Muted gold - premium positioning */
+    --color-accent-foreground: #2C2420; /* Rich dark brown */
+    
+    /* Background Colors */
+    --color-background: #FEFCFA; /* Off-white with warm undertones */
+    --color-foreground: #2C2420; /* Rich dark brown */
+    
+    /* Surface Colors */
+    --color-card: #F8F4F0; /* Card background - subtle elevation */
+    --color-card-foreground: #2C2420; /* Rich dark brown */
+    
+    --color-popover: #F8F4F0; /* Card background */
+    --color-popover-foreground: #2C2420; /* Rich dark brown */
+    
+    /* Muted Colors */
+    --color-muted: #F5E6D3; /* Light nude */
+    --color-muted-foreground: #6B5B52; /* Medium brown - supporting text */
+    
+    /* Border & Input */
+    --color-border: rgba(212, 181, 160, 0.2); /* Minimal borders */
+    --color-input: #F8F4F0; /* Card background */
+    --color-ring: #D4B5A0; /* Warm nude */
+    
+    /* Status Colors */
+    --color-success: #7A9471; /* Muted sage green */
+    --color-success-foreground: #FEFCFA; /* Off-white */
+    
+    --color-warning: #B8956A; /* Warm amber */
+    --color-warning-foreground: #2C2420; /* Rich dark brown */
+    
+    --color-error: #A67B6B; /* Sophisticated terracotta */
+    --color-error-foreground: #FEFCFA; /* Off-white */
+    
+    --color-destructive: #A67B6B; /* Sophisticated terracotta */
+    --color-destructive-foreground: #FEFCFA; /* Off-white */
+    
+    /* Radius */
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --color-background: #1A1512; /* Deep warm brown */
+    --color-foreground: #F5E6D3; /* Light nude */
+    
+    --color-card: #2C2420; /* Rich dark brown */
+    --color-card-foreground: #F5E6D3; /* Light nude */
+    
+    --color-popover: #2C2420; /* Rich dark brown */
+    --color-popover-foreground: #F5E6D3; /* Light nude */
+    
+    --color-primary: #D4B5A0; /* Warm nude */
+    --color-primary-foreground: #1A1512; /* Deep warm brown */
+    
+    --color-secondary: #3D342E; /* Dark nude */
+    --color-secondary-foreground: #F5E6D3; /* Light nude */
+    
+    --color-muted: #3D342E; /* Dark nude */
+    --color-muted-foreground: #B8A89D; /* Light brown */
+    
+    --color-accent: #C9A876; /* Muted gold */
+    --color-accent-foreground: #1A1512; /* Deep warm brown */
+    
+    --color-destructive: #A67B6B; /* Sophisticated terracotta */
+    --color-destructive-foreground: #F5E6D3; /* Light nude */
+    
+    --color-border: rgba(212, 181, 160, 0.15);
+    --color-input: #2C2420; /* Rich dark brown */
+    --color-ring: #D4B5A0; /* Warm nude */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Source Sans 3', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+  }
+}
