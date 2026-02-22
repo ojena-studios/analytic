@@ -5,6 +5,15 @@
 [build.environment]
   NODE_VERSION = "18"
 
+# Désactive le scan sur les clés publiques légitimes (anon key Supabase, URL publiques)
+# et sur le dossier build/ qui contient le bundle minifié
+[build.processing]
+  skip_processing = false
+
+[context.production.environment]
+  SECRETS_SCAN_OMIT_KEYS   = "VITE_SUPABASE_ANON_KEY,VITE_SUPABASE_URL,VITE_SHOPIFY_STORE_DOMAIN,VITE_SHOPIFY_API_VERSION"
+  SECRETS_SCAN_OMIT_PATHS  = "build/"
+
 [[redirects]]
   from   = "/*"
   to     = "/index.html"
